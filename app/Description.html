@@ -1,50 +1,194 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<script>
-		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
-		});
-	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
-	<!--Added MathJax hack to make inline equations work-->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		processEscapes: true
-	}
-});
-</script>   </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/dist/js/vendor.js"></script>
+    <link rel="stylesheet" href="/dist/css/vendor.css" />
+    <script>
+      $(function () {
+        $("header").load("/templates/header.html");
+        $("footer").load("/templates/footer.html");
+      });
+    </script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/wiki.js"></script>
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+      		MathJax.Hub.Config({
+      		tex2jax: {
+      		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      		processEscapes: true
+      	}
+      });
+    </script>
+  </head>
 
-<body>
-	<div id="igem-navbar-placeholder">
-		<p>Placeholder for iGEM Navbar</p>
-	</div>
-	<header></header>
+  <body>
+    <div id="igem-navbar-placeholder">
+      <p>Placeholder for iGEM Navbar</p>
+    </div>
+    <header></header>
     <main id="top">
-		<article>
-			<h1> Description </h1>
+      <article>
+        <h1>LAC‌ ‌MAN‌ - Description</h1>
 
-			<p> Talk about your project, describe what moves you and why this project is important for your team. </p>
+        <p>
+          Water is the basis of all life on our planet. Whether plants, animals,
+          humans or microorganisms, we all depend on it for our survival. Water
+          scarcity and purity worldwide cause conflicts. Above all, water
+          pollution from drugs, such as antibiotics or estrogen derivatives and
+          other non-medical pollutants is proving to be an emerging issue in
+          industrialized countries. For this reason, in 2013 the EU Parliament
+          adopted a directive on the constant analysis of water within the Union
+          [1]. This so-called “watch list” was first evaluated in 2018 by the
+          Joint Research Center [2]. The frequent exceedance of the Predicted
+          No-Effect Concentration (PNEC) for 17-alpha-ethinylestradiol (EE2) was
+          particularly noticeable. In addition to EE2, the watch list includes
+          other potentially dangerous substances for humans and the environment,
+          such as antibiotics and diclofenac (pain relievers). Many of these
+          molecules are characterized by common properties. Examples include
+          aromatic ring structure and their effect as endocrine disruptors (e.g.
+          EE2) and / or the toxicity of these compounds (e.g. diclofenac,
+          carbamazepine), which justify the hazard potential for humans and
+          animals [3].
+        </p>
 
-			<p> This page should contain: </p>
-			<ul> 
-				<li> Clear and concise description of the project. </li>
-				<li> A description of why your team chose to pursue this project. </li>
-				<li> References and sources (citations). </li>
-				<li> Visuals to supplement your project description. </li>
-			</ul>
-		</article>
+        <h2>Why laccases?</h2>
+        <p>
+          Aromatic ring structures serve as potential targets for enzymes, the
+          so-called laccases, that have been identified in various fungi and
+          bacteria. Laccases oxidize phenol groups, creating phenoxyl radicals.
+          Four oxidized electrons are stored and transferred via the copper
+          cluster onto free molecular oxygen, which is reduced to water. The
+          degradation products produced here have no negative effects on people
+          and the environment [4]. Our goal was to improve the stability of
+          these enzymes and by using our selected laccases of T. versicolor and
+          S. cyaneus to neutralize a large number of pollutants due to their
+          wide range of substrates.
+        </p>
+
+        <h2>How is laccase synthesized?</h2>
+        <p>
+          The laccases are produced using a classic biotechnological approach,
+          in which the insert DNA T. versicolor or S.cyaneus and the expression
+          vectors pPICZalpha or PET28 are amplified via PCR using primers for a
+          subsequent gibson assembly and then assembled using the NEBuilder HiFi
+          DNA Assembly Cloning Kit #E5520S. This is used to transform competent
+          E.coli cells. The expression vector pPICZalpha is integrated into the
+          genome in order to generate a stable expression strain [6]. Because
+          the above Laccase T. versicolor has several disulfide bridges,
+          production in eukaryotic cells is necessary. The Pichia pastoris X33
+          strain has been successfully used for the synthesis of laccases.
+        </p>
+
+        <h2>Why immobilization?</h2>
+        <p>
+          Immobilization using a mesoporous silica foam is suitable to make the
+          laccases sustainable on the long run [7, 8]. Silicon-based materials
+          are well suited because they are environmentally friendly,
+          biocompatible and, above all, resistant to organic solvents and
+          microbial attacks. Furthermore, the immobilization makes the laccases
+          pH- and thermostable. In addition, immobilized enzymes have a halflife
+          up to 18 times longer [9]. At the same time, the enzymes used are
+          firmly bound to the matrix and therefore do not have to be filtered
+          out of the wastewater again. This process also has the advantage that
+          no genetically modified organisms can be released into the
+          environment.
+        </p>
+
+        <h2>Innovation</h2>
+        <p>
+          Immobilizing enzymes on a mesoporous silica matrix via amino groups on
+          their surface and glutaraldehyde as a cross-linking agent was reported
+          to significantly decrease enzyme activity [10]. Because the active
+          site could be sterically blocked by the immobilization process, we
+          came up with the idea of adding a poly-Lysine-tag at the c-terminus of
+          the laccase. In doing so, the immobilization rate near the active site
+          is reduced and the structure of the laccase would remain almost
+          unchanged, resembling the free enzyme.
+        </p>
+
+        <p>
+          How did we estimate the amount of immobilized enzyme needed? In order
+          to be able to analyze the properties of our foam and the immobilized
+          laccases in regard to substrate conversion, we established a kinetic
+          model according to Michaelis-Menten. In doing so, the foam is
+          simulated by aligned compartments which represent a substrate
+          concentration gradient inside the foam. This substrate conversion
+          kinetic is further complemented by equations modelling
+          temperature-dependence and other important parameters.
+        </p>
+
+        <h2>Applications</h2>
+        <p>
+          Could be applied in wastewater treatment plants, efflux of pharma
+          companies and hospitals.
+        </p>
+
+        <h2>References</h2>
+        <ul>
+          <li>
+            [1] „RICHTLINIE 2013/39/EU DES EUROPÄISCHEN PARLAMENTS UND DES
+            RATES,“ 2013.
+          </li>
+          <li>
+            [2] D. M. I. S. D. N. a. T. L. Robert Loos, „Review of the 1st Watch
+            List under the Water Framework Directivend and recommendations for
+            the 2 Watch List,“ Publications Office of the European Union,
+            Luxembourg, 2018.
+          </li>
+          <li>
+            [3] P. G. P. G. Benoıt Ferrari, “Ecotoxicological impact of
+            pharmaceuticals found in treated wastewaters: study of
+            carbamazepine, clofibric acid, and diclofenac”, Ecotoxicology and
+            Environ- mental Safety, vol. 55, 2003.
+          </li>
+          <li>
+            [4] M. H. J. S. K. P. P. R. S. R. M. Y. Palanivel Sathishkumar,
+            „Laccase mediated diclofenac trans- formation and cytotoxicity
+            assessment on mouse fibroblast 3T3-L1 preadipocytes,“ RSC Adv., vol.
+            4, 2014.
+          </li>
+          <li>
+            [5] Guex N, Peitsch MC, Schwede T. Automated comparative protein
+            structure modeling with SWISS- MODEL and Swiss-PdbViewer: A
+            historical perspective. Electrophoresis. 2009;30:S162–S173.
+          </li>
+          <li>
+            [6] Li, Pingzuo & Anumanthan, Anukanth & Gao, Xiugong & Ilangovan,
+            Kuppusamy & Suzara, VV & Duzgunes, Nejat & Renugopalakrishnan, V.
+            (2007). Expression of Recombinant Proteins in Pichia Pastoris.
+            Applied biochemistry and biotechnology. 142. 105-24.
+            10.1007/s12010-007-0003-x.
+          </li>
+          <li>
+            [7] M. &. F. M. Dreifke, „Immobilisierung von Enzymen: Spielerei
+            oder biotechnologischer Fortschritt?,“ Biospektrum (2017) 23: 95.,
+            no. https://doi.org/10.1007/s12268-017-0769-5, 2017.
+          </li>
+          <li>
+            [8] A. F.-G. K. S.-C. I. N. T. J. Jakub Zdarta, „Mesostructured
+            cellular foam silica materials for laccase immobilization and
+            tetracycline removal: A comprehensive study,“ Microporous and
+            Mesoporous Materials, vol. 291, 2020.
+          </li>
+          <li>
+            [9] Patel, S. K. S., Kalia, V. C., Choi, J. H., Haw, J. R., Kim, I.
+            W., & Lee, J. K., „Immobilization of laccase on SiO2 nanocarriers
+            improves its stability and reusability“, Journal of Microbiology and
+            Biotechno- logy, 24(5),
+            639–647.https://doi.org/10.4014/jmb.1401.01025, 2014.
+          </li>
+          <li>
+            [10] Zdarta, J., Feliczak-Guzik, A., Siwińska-Ciesielczyk, K.,
+            Nowak, I. & Jesionowski, T. Mesostructured cellular foam silica
+            materials for laccase immobilization and tetracycline removal: A
+            comprehensive study. Microporous Mesoporous Mater. 291, (2020).
+          </li>
+        </ul>
+      </article>
     </main>
-  <footer></footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
-
-

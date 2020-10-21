@@ -1,44 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<script>
-		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
-		});
-	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
-	<!--Added MathJax hack to make inline equations work-->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		processEscapes: true
-	}
-});
-</script>   </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/dist/js/vendor.js"></script>
+    <link rel="stylesheet" href="/dist/css/vendor.css" />
+    <script>
+      $(function () {
+        $("header").load("/templates/header.html");
+        $("footer").load("/templates/footer.html");
+      });
+    </script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/wiki.js"></script>
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+      		MathJax.Hub.Config({
+      		tex2jax: {
+      		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      		processEscapes: true
+      	}
+      });
+    </script>
+  </head>
 
-<body>
-	<div id="igem-navbar-placeholder">
-		<p>Placeholder for iGEM Navbar</p>
-	</div>
-	<header></header>
+  <body>
+    <div id="igem-navbar-placeholder">
+      <p>Placeholder for iGEM Navbar</p>
+    </div>
+    <header></header>
     <main id="top">
-		<article>
-			<h1> Attributions </h1>
+      <article>
+        <h1>Attributions</h1>
 
-			<p> This page is your opportunity to explain what parts of your project you did and what was done by technicians, advisers, etc. This requirement is not about literature references - these can and should be displayed throughout your wiki. </p>
+        <p>
+          We’d like to thank the following people for providing their time and
+          resources to support and guide us.
+        </p>
 
-			<p> This is a bronze medal criterion. </p>
-		</article>
+        <div>
+          <p>
+            apl. Prof. Dr. habil. Siemann Herzberg, Vice Director of the
+            Biochemical Engineering Institute, Thank you for founding,
+            organizing and managing the iGEM Team of the University of
+            Stuttgart. We would also like to thank you for helping us manage a
+            project from start to finish.
+          </p>
+        </div>
+        <div>
+          <p>
+            Jun. -Prof. Dr. rer. nat. Björn Voß, Professor at the Institute of
+            Biochemical Engineering - Computational Biology, Thank you for being
+            our second Principle Investigator. Thank you for organizing
+            everything regarding iGEM registrations and providing your time and
+            knowledge.
+          </p>
+        </div>
+        <div>
+          <p>
+            Jun. Prof. Dr. Michael Heymann, Institute of Biomaterials and
+            Biomolecular Systems, Thank you for giving us advice especially in
+            the initial moments of our project. Thank you for founding,
+            organizing and managing the iGEM Team of the University of
+            Stuttgart. We would also like to thank you for helping us manage a
+            project from start to finish.
+          </p>
+        </div>
+        <div>
+          <p>
+            Ph.D. Erik Eppinger, Institute of Microbiology, Thank you for your
+            commitment throughout the iGEM period and for always being ready to
+            answer our questions and advising us regarding lab work.
+          </p>
+        </div>
+        <div>
+          <p>
+            Ph.D. Jan Müller, Institute of Biochemical Engineering, Thank you
+            for always helping us around in the institute. Also thanks for your
+            help regarding our modelling team.
+          </p>
+        </div>
+        <div>
+          <p>
+            T.A Janosch Gröning, Institute of Microbiology, Thank you for taking
+            your time teaching us proper methods, like disrupting cells via
+            french press, and being available for any questions we had.
+          </p>
+        </div>
+        <div>
+          <p>
+            Ph.D. Benjamin Aberle, Institute of technical Biochemistry, Thank
+            you for supporting us with the analytics and providing us with the
+            HPLC system.
+          </p>
+        </div>
+        <div>
+          <p>
+            T.A Andrea Seipel, Institute of Biochemical Engineering, Thank you
+            for aiding us in placing orders for laboratory material.
+          </p>
+        </div>
+        <div>
+          <p>
+            T.A Martina Schweikert, Institute of Biochemical Engineering, Thank
+            you for aiding us in placing orders for laboratory material.
+          </p>
+        </div>
+        <div>
+          <p>
+            Secretary Silke Reu, Institute of Biochemical Engineering, Thank you
+            for helping us with managing our finances.
+          </p>
+        </div>
+        <div>
+          <p>
+            M. Sc. Lennart Kühl, Institute of Cell Biology and Immunology, Thank
+            you for providing the necessary columns for our protein purification
+            and for giving us access to the Nanodrop.
+          </p>
+        </div>
+        <div>
+          <p>
+            Dr. rer. nat. Falk Lissner, Institute of Inorganic Chemistry, Thank
+            you for letting us use the laboratory of inorganic chemistry for the
+            synthesis of our mesoporous silica foam.
+          </p>
+        </div>
+        <div>
+          <p>
+            Anita Czambor, Institute of Inorganic Chemistry, Thank you for
+            providing us all the equipment for our synthesis of the mesoporous
+            silica foam.
+          </p>
+        </div>
+        <div>
+          <p>
+            Philipp Flad, 4th Physics Institute, Thank you for taking your time
+            to help us imaging our foam with the SEM.
+          </p>
+        </div>
+        <div>
+          <p>
+            Dr. Natalie Trachtmann, Institute of Microbiology, Thank you for
+            always answering our questions and to provide us with the necessary
+            equipment like centrifuges but also chemicals that we did not have
+            in our laboratory.
+          </p>
+        </div>
+        <div>
+          <p>
+            Christian Kaiser, Initiative for a progressive turnaround in
+            agricultural science, Thank you for participating in our discussion
+            about “Influence of man-made water pollution on aquatic ecosystems”
+            and “GMOs to save the environment”.
+          </p>
+        </div>
+      </article>
     </main>
-  <footer></footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
-
-

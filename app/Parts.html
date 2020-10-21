@@ -1,44 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<script>
-		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
-		});
-	</script>
-	<link rel="stylesheet" href="/templates/stles.css">
-	<script src="/js/wiki.js"></script>
-	<!--Added MathJax hack to make inline equations work-->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		processEscapes: true
-	}
-});
-</script>   </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/dist/js/vendor.js"></script>
+    <link rel="stylesheet" href="/dist/css/vendor.css" />
+    <script>
+      $(function () {
+        $("header").load("/templates/header.html");
+        $("footer").load("/templates/footer.html");
+        $("head").append(
+          '<link rel="stylesheet" type="text/css" href="/templates/styles.css">'
+        );
+      });
+    </script>
+    <link rel="stylesheet" href="/templates/stles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/wiki.js"></script>
+    <!--Added MathJax hack to make inline equations work-->
+    <script type="text/x-mathjax-config">
+      		MathJax.Hub.Config({
+      		tex2jax: {
+      		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      		processEscapes: true
+      	}
+      });
+    </script>
+  </head>
 
-<body>
-	<div id="igem-navbar-placeholder">
-		<p>Placeholder for iGEM Navbar</p>
-	</div>
-	<header></header>
+  <body>
+    <div id="igem-navbar-placeholder">
+      <p>Placeholder for iGEM Navbar</p>
+    </div>
+    <header></header>
     <main id="top">
-		<article>
-			<h1> Parts </h1>
+      <article>
+        <h1>Parts</h1>
 
-			<p> Each team will make new parts during iGEM and will submit them to the Registry of Standard Biological Parts. The iGEM software provides an easy way to present the parts your team has created. </p>
+        <p>
+          Laccases can be found among many different organisms such as fungi,
+          bacteria and even plants. Fungal laccases come up with a higher
+          activity, higher redox potentials and wider substrate range compared
+          to bacterial laccases. They are also more active at lower temperatures
+          which can be found, for instance, in wastewater. On the other hand,
+          bacterial laccases are more stable regarding high salt concentrations
+          and are especially easier to produce.1,2
+        </p>
+        <p>
+          In order to investigate the degradation of diclofenac and
+          carbamazepine within our approach, two laccases were evaluated. The
+          first laccase tested was an eukaryotic fungal laccase of Trametes
+          versicolor which has already been shown to degrade diclofenac.3
+          Therefore, a Biobrick contributed by the iGEM-Team Stockholm 2018 (the
+          laccase with a his-Tag) was further improved by adding a poly-Lys-Tag
+          which should facilitate the immobilization within the Mesocellular
+          Silica Foam (MCF). The second laccase we used in this study was a less
+          known bacterial laccase derived from Streptomyces cyaneus. Its
+          performance regarding degradation of the substrates of interest was
+          assessed, since a prokaryotic laccase would provide benefits regarding
+          costs and duration of expression compared to an eukaryotic laccase.
+          Additionally, we added a his-Tag for clean-up and the poly-Lys-Tag for
+          improved immobilization conditions.
+        </p>
 
-			<p> Remember that the goal of proper part documentation is to describe and define a part, so that it can be used without needing to refer to the primary literature. Registry users in future years should be able to read your documentation and be able to use the part successfully. Also, you should provide proper references to acknowledge previous authors and to provide for users who wish to know more. </p>
-		</article>
+        <h2>Our Parts</h2>
+        <p>We want to contribute two parts to the iGEM Biobrick-Library.</p>
+
+        <h3>New Biobrick:</h3>
+        <p>
+          We want to contribute another laccase to the iGEM-Biobricks. This one
+          is derived from Streptomyces cyaneus and is not as well studied as the
+          laccase of Trametes versicolor. It showed good potential regarding
+          activity and stability during ABTS-Assays, so we assessed its
+          capability of degrading our substrates of interest. It showed the
+          ability to degrade diclofenac. Hence, this Biobrick could be a
+          suitable addition to wastewater treatment approaches through
+          immobilized enzymes. Furthermore, a bacterial host allows cheaper and
+          faster expression compared to expression in eukaryotic hosts like
+          Pichia pastoris.
+        </p>
+
+        <p>
+          We ordered the sequence from IDT and obtained a pET28a-plasmid by the
+          IMB of the University of Stuttgart. After a XbaI and NotI digestion
+          and subsequent ligation, the ligation product was transformed in
+          competent DH5α-E coli cells. We screened for positive clones, isolated
+          the pET28a-lacSc vector and verified successful cloning via
+          sequencing. The expression was performed in the E coli strain BL21.
+          The resulting protein lysate showed good potential regarding stability
+          and activity for our immobilization approach.
+        </p>
+
+        <p>
+          This Biobrick is the DNA-sequence of the laccase of S cyaneus. In
+          addition, there is a 6xhis-tag at the C-terminus of the sequence and a
+          6xlys-tag at the N-terminus of the protein. The his-tag should allow
+          purification of the laccase while the lys-tag could possibly improve
+          the immobilization process through providing free amino-groups.
+        </p>
+
+        <h3>Improvement of Biobrick:</h3>
+
+        <p>
+          It is an alteration of an already existing part. It´s a laccase of T.
+          versicolor which was contributed by the iGEM-Team Stockholm 2018. We
+          added a poly-lysine-tag at the C-terminus of the laccase sequence to
+          investigate its influence on the immobilization process.
+        </p>
+
+        <p>
+          1. Zhang, Y. et al. Application of eukaryotic and prokaryotic laccases
+          in biosensor and biofuel cells: recent advances and electrochemical
+          aspects. Appl. Microbiol. Biotechnol. 102, 10409–10423 (2018). 2.
+          Margot, J. et al. Bacterial versus fungal laccase: Potential for
+          micropollutant degradation. AMB Express 3, 1–14 (2013) 3. Alharbi, S.
+          et al. Degradation of diclofenac, trimethoprim, carbamazepine, and
+          sulfamethoxazole by laccase from Trametes versicolor: Transformation
+          products and toxicity of treated effluent. Biocatalysis and
+          Biotransformation 37(6), 399-408 (2019)
+        </p>
+      </article>
     </main>
-  <footer></footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
-
-
